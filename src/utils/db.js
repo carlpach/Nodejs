@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // const DB_URL = 'mongodb://localhost:27017/pepito';
-const DB_URL = "mongodb+srv://root:root@cluster0.sti8ext.mongodb.net/?retryWrites=true&w=majority";
+const DB_URL = process.env.DB_URL;
 
 const connect = async() => {
     try {
